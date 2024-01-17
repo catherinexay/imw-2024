@@ -1,0 +1,42 @@
+body {
+    background-color: #D7D7D7;
+}
+
+.painting-1 {
+    display: grid;
+    width: 600px; 
+    height: 600px;
+
+    /* for testing */
+    border: 1px solid black; 
+
+    grid-template-columns: repeat(15, 1fr); 
+    /* columns is 40px */
+    grid-template-rows: repeat(15, 1fr);
+}
+
+.cream {
+    background-color: #F9F8EC;
+}
+
+.red {
+    background-color: #FF3A2D;
+}
+
+.blue {
+    background-color: #009BC8;
+}
+
+.yellow{
+    background-color: #FDD800;
+}
+
+.border-right {
+    border-right: 20px solid #4D4D42; 
+    /* every 3rd square and every 2nd last square*/
+}
+
+.border-bottom {
+    border-bottom: 20px solid #4D4D42; 
+    /* 5 row 3 squares */
+}
