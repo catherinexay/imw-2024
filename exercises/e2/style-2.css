@@ -1,0 +1,50 @@
+body {
+    background-color: #D7D7D7;
+} 
+
+.painting-3 {
+    display: grid;
+    width: 400px ;
+    height: 400px;
+
+    border: 1px solid black;
+    grid-template-columns: repeat(20, 1fr); 
+    grid-template-rows: repeat(20, 1fr);
+}
+
+/* colours */
+.black {
+    background-color: #110F1A;
+}
+
+.blue {
+    background-color: #1B2D5F;
+}
+
+.red {
+    background-color: #A83729;
+}
+
+.white {
+    background-color: #E6E1CE;
+}
+
+.yellow {
+    background-color: #D0B570;
+}
+
+/* strokes */
+.stroke-left {
+    border-left: 10px solid #110F1A;
+}
+
+.stroke-right {
+    border-right: 10px solid #110F1A;
+}
+.stroke-bottom {
+    border-bottom: 10px solid #110F1A;
+}
+
+.stroke-top{
+    border-top: 10px solid #110F1A;
+}

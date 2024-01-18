@@ -1,0 +1,98 @@
+/* for painting 2 */
+body {
+    background-color: #D7D7D7;
+} 
+
+.painting-2 {
+    display: grid;
+    width: 1300px;
+    height: 1300px; 
+
+    border: 1px solid black; 
+    grid-template-columns: repeat(26, 1fr); 
+    grid-template-rows: repeat(26, 1fr);
+}
+
+/* colours for blocks*/
+.dark-blue-1 {
+    background-color: #2A729B;
+}
+.light-blue-1 {
+    background-color: #45B7EC;
+}
+.purple-1 {
+    background-color: #283955;
+}
+.white-1 {
+    background-color: #ECF1E4;
+}
+.yellow-1 {
+    background-color: #FFC415;
+}
+.light-blue-2 {
+    background-color: #0C84E5;
+}
+.black {
+    background-color: #303E43;
+}
+.green-1 {
+    background-color: #28A672;
+}
+.yellow-2 {
+    background-color: #FFCF3B;
+}
+.pink-1{
+    background-color: #FEDAD6;
+}
+.dark-blue-1 {
+    background-color: #1043C1;
+}
+.red-1{
+    background-color: #F24442;
+}
+.dark-orange-1 {
+    background-color: #C75B38;
+}
+.orange-1 {
+    background-color: #FE693F;
+}
+.dark-red-1 {
+    background-color: #D1373F;
+}
+.pink-2 {
+    background-color: #FAE8E5;
+}
+.red-2{
+    background-color: #E93B3A;
+}
+.dark-blue-2 {
+    background-color: #1445C2;
+}
+.yellow-3 {
+    background-color: #FEC01C;
+}
+.orange-2 {
+    background-color: #FF9E38;
+}
+.green-2 {
+    background-color: #1D8366;
+}
+.dark-red-2 {
+    background-color: #D83B40;   
+}
+
+/* colours for strokes */
+.beige {
+    background-color: #F8E6C2;
+}
+.navy {
+    background-color: #1C2754;
+}
+
+.border-stroke-1 {
+    border-bottom: 40px solid #F8E6C2; 
+}
+
+.border-stroke-2 {
+    border-top: 40px solid #1C2754;
+}
