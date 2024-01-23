@@ -1,0 +1,130 @@
+/* for third page */
+body {
+    background-color: #1D2345;
+    margin: auto;
+    width: fit-content;
+} 
+
+.text-format{
+    position: absolute;
+    top: 35px;
+    left: 50px;
+}
+
+/* SOURCE: https://www.w3resource.com/html-css-exercise/html-css-practical-exercises/html-css-practical-exercise-45.php */
+.interactive-box{
+    margin: 24px;
+    width: 90px; 
+    height: 30px; 
+    background: white;
+    animation: zoom-in-zoom-out-1 1s ease infinite;
+}
+
+/* this animation is for the link button */
+
+@keyframes zoom-in-zoom-out-1 {
+    0% {
+        transform: scale(1, 1);
+    }
+    50% {
+        transform: scale(1.5,1.5);
+    }
+    100% {
+        transform: scale(1,1);
+    }
+}
+
+.link-format {
+    position: absolute;
+    bottom: -300px;
+    right: 50px;
+}
+
+.frame-3{
+    display: grid;
+    width: 1000px;
+    height: 1000px; 
+
+    grid-template-columns: repeat(25, 1fr); 
+    grid-template-rows: repeat(25, 1fr); 
+}
+
+.blue-1{
+    background-color: #1D2345;
+}
+.blue-2{
+    background-color: #262B49;}
+.blue-3{
+    background-color: #292D4A;}
+.blue-4{
+    background-color: #333450;}
+.blue-5{
+    background-color: #3B3951;}
+.blue-6{
+    background-color: #3E3C52;}
+.blue-7{
+    background-color: #2E3049;}
+.blue-8{
+    background-color: #39374F;}
+.blue-9{
+    background-color: #2D3250;}
+.blue-10{
+    background-color: #282E50;}
+.blue-11{
+    background-color: #3C4F77;}
+.blue-12{
+    background-color: #BDECF6;}
+.blue-13{
+    background-color: #BDECF6;}
+.blue-14{
+    background-color: #92D2ED;}
+.blue-15{
+    background-color: #3A4E80;}
+.grey-1{
+    background-color: #2B343B;}
+.grey-2{
+    background-color: #1E2631;}
+.blue-16{
+    background-color: #5E8899;}
+.grey-3{
+    background-color: #2E2C37;}
+.purple-1{
+    background-color: #555466;}
+.brown-1{
+    background-color: #5D5757;}
+.purple-2{
+    background-color: #5F5A71;}
+.brown-2{
+    background-color: #4F4A4E;}
+.blue-17{
+    background-color: #0B1725;}
+.purple-3{
+    background-color: #21263A;}
+.green-1{
+    background-color: #243843;}
+.brown-3{
+    background-color: #2A2028;}
+.black-1{
+    background-color: #1C1C24;}
+.brown-4{
+    background-color: #24201D;}
+.grey-4{
+    background: #585158;}
+.brown-5{
+    background-color: #383339;}
+.grey-5{
+    background-color: #484651;}
+.purple-4{
+    background-color: #433846;}
+.brown-6{
+    background-color: #4C3B31;}
+.brown-7{
+    background-color: #453536;}
+.purple-5{
+    background-color: #403A44;}
+.grey-6{
+    background-color: #566374;}
+.green-2{
+    background-color: #272F32;}
+.grey-7{
+    background-color: #3B3C40;}

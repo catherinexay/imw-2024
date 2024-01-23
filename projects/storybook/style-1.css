@@ -1,0 +1,774 @@
+/* for first page */
+body {
+    background-color: #0C1008;
+    margin: auto;
+    width: fit-content;
+} 
+
+/* formatting the main text */
+.text-format{
+    position: absolute;
+    top: 35px;
+    left: 50px;
+}
+
+/* SOURCE: https://www.w3resource.com/html-css-exercise/html-css-practical-exercises/html-css-practical-exercise-45.php */
+.interactive-box{
+    margin: 24px;
+    width: 60px; 
+    height: 30px; 
+    background: white;
+    animation: zoom-in-zoom-out-1 1s ease infinite;
+}
+/* this animation is for the link button */
+@keyframes zoom-in-zoom-out-1 {
+    0% {
+        transform: scale(1, 1);
+    }
+    50% {
+        transform: scale(1.5,1.5);
+    }
+    100% {
+        transform: scale(1,1);
+    }
+}
+
+.link-format {
+    position: absolute;
+    bottom: -300px;
+    right: 50px;
+}
+
+/* this animation is for the drawing */
+@keyframes zoom-in-zoom-out-2 {
+    0% {
+        transform: scale(0.76, 0.76);
+    }
+    50% {
+        transform: scale(0.5,0.5);
+    }
+    100% {
+        transform: scale(0.76,0.76);
+    }
+}
+
+.frame-1 {
+    display: grid;
+    width: 1000px;
+    height: 1000px; 
+
+    border: 1px solid #0C1008; 
+    grid-template-columns: repeat(50, 1fr); 
+    grid-template-rows: repeat(50, 1fr); 
+    animation: zoom-in-zoom-out-2 16s ease infinite;
+}
+
+
+
+/* all colours */
+.sky-black {
+    background-color: #0C1008;
+}
+
+.purple-1 {
+    background-color: #393160;
+}
+.purple-2 {
+    background-color: #38386A;
+}
+.purple-3 {
+    background-color: #494987;
+}
+.purple-4 {
+    background-color: #282746;
+}
+.purple-5 {
+    background-color: #2B2C56;
+}
+.purple-6 {
+    background-color: #2E3D74;
+}
+.purple-7 {
+    background-color: #38315A;
+}
+.purple-8{
+    background-color: #38386A;
+}
+.purple-9{
+    background-color: #383A6C;
+}
+.purple-10{
+    background-color: #34376A;
+}
+.purple-11{
+    background-color: #32376E;
+}
+.purple-12{
+    background-color: #2B2C5A;
+}
+.purple-13{
+    background-color: #2A2E56;
+}
+.purple-14{
+    background-color: #2C2F5A;
+}
+.purple-15{
+    background-color: #43395C;
+}
+.blue-1{
+    background-color: #485276;
+}
+.purple-16{
+    background-color: #4E4C7B;
+}
+.purple-17{
+    background-color: #414173;
+}
+.purple-18{
+    background-color: #4A4F87;
+}
+.purple-19{
+    background-color: #5D62A4;
+}
+.blue-2{
+    background-color: #6276AB;
+}
+.purple-20{
+    background-color: #3B3B6F;
+}
+.purple-21{
+    background-color: #333158;
+}
+.purple-22{
+    background-color: #2A2B57;
+}
+.purple-23{
+    background-color: #2E2F5B;
+}
+.purple-24{
+    background-color: #2C2F5A;
+}
+.purple-25{
+    background-color: #292C55;
+}
+.purple-27{
+    background-color: #51507A;
+}
+.purple-28{
+    background-color: #58537C;
+}
+.purple-29{
+    background-color: #58537C;
+}
+.purple-30{
+    background-color: #6E70A0;
+}
+.purple-31{
+    background-color: #513856;
+}
+.purple-32{
+    background-color: #52507F;
+}
+.purple-33{
+    background-color: #484270;
+}
+.purple-34{
+    background-color: #524F84;
+}
+.purple-35{
+    background-color: #3E4474;
+}
+.purple-36{
+    background-color: #454B87;
+}
+.purple-37{
+    background-color: #3B3B6B;
+}
+.purple-38{
+    background-color: #2E2F5B;
+}
+.purple-39{
+    background-color: #3B3560;
+}
+.purple-41{
+    background-color: #454577;
+}
+.purple-42{
+    background-color: #525A8B;
+}
+.purple-43{
+    background-color: #5C5B87;
+}
+.purple-44{
+    background-color: #6C5C89;
+}
+.purple-45{
+    background-color: #67507E;
+}
+.pink-1{
+    background-color: #965A90;
+}
+.purple-46{
+    background-color: #68618B;
+}
+.purple-47{
+    background-color: #6D729E;
+}
+.purple-48{
+    background-color: #6A658D;
+}
+.purple-49{
+    background-color: #645C87;
+}
+.purple-50{
+    background-color: #403867;
+}
+.purple-51{
+    background-color: #484B7E;
+}
+.purple-52{
+    background-color: #35375E;
+}
+.purple-53{
+    background-color: #3C355E;
+}
+.purple-54{
+    background-color: #545181;
+}
+.purple-55{
+    background-color: #605F87;
+}
+.purple-56{
+    background-color: #6A6C95;
+}
+.purple-57{
+    background-color: #666390;
+}
+.purple-58{
+    background-color: #715F89;
+}
+.purple-59{
+    background-color: #8A75A7;
+}
+.purple-60{
+    background-color: #79789A;
+}
+.purple-61{
+    background-color: #6E6489;
+}
+.purple-62{
+    background-color: #685470;
+}
+.purple-63{
+    background-color: #6B577A;
+}
+.purple-64{
+    background-color: #6A618C;
+}
+.purple-65{
+    background-color: #5F6694;
+}
+.purple-66{
+    background-color: #4D4173;
+}
+.purple-67{
+    background-color: #2C223A;
+}
+.purple-68{
+    background-color: #352F51;
+}
+.purple-69{
+    background-color: #46406C;
+}
+.purple-70{
+    background-color: #443E6E;
+}
+.purple-71{
+    background-color: #605A88;
+}
+.purple-72{
+    background-color: #7F7BB0;
+}
+.pink-2{
+    background-color: #C57EC4;
+}
+.purple-73{
+    background-color: #72657F;
+}
+.purple-74{
+    background-color: #786A83;
+}
+.purple-75{
+    background-color: #6E5B77;
+}
+.purple-76{
+    background-color: #726485;
+}
+.purple-77{
+    background-color: #6A6287;
+}
+.purple-78{
+    background-color: #6B5B7F;
+}
+.brown-1{
+    background-color: #67505A;
+}
+.purple-79{
+    background-color: #646B97;
+}
+.purple-80{
+    background-color: #322133;
+}
+.purple-81{
+    background-color: #33417A;
+}
+.purple-82{
+    background-color: #2B2644;
+}
+.purple-83{
+    background-color: #3E3864;
+}
+.purple-84{
+    background-color: #443D67;
+}
+.purple-85{
+    background-color: #535182;
+}
+.purple-86{
+    background-color: #687198;
+}
+.purple-87{
+    background-color: #7B6B85;
+}
+.purple-88{
+    background-color: #7E748F;
+}
+.purple-89{
+    background-color: #817991;
+}
+.purple-90{
+    background-color: #82738A;
+}
+.purple-91{
+    background-color: #86748C;
+}
+.purple-92{
+    background-color: #8D8DAF;
+}
+.purple-93{
+    background-color: #745D6F;
+}
+.purple-94{
+    background-color: #6B6082;
+}
+.purple-95{
+    background-color: #675676;
+}
+.purple-96{
+    background-color: #665A7D;
+}
+.purple-97{
+    background-color: #5B6799;
+}
+.purple-98{
+    background-color: #564E8A;
+}
+.purple-99{
+    background-color: #49334E;
+}
+.purple-100{
+    background-color: #33243B;
+}
+.purple-101{
+    background-color: #484677;
+}
+.purple-102{
+    background-color: #453F6D;
+}
+.purple-103{
+    background-color: #77678E;
+}
+.brown-2{
+    background-color: #6E4738;
+}
+.purple-104{
+    background-color: #867B8B;
+}
+.purple-105{
+    background-color: #8C7F90;
+}
+.purple-106{
+    background-color: #94869F;
+}
+.purple-107{
+    background-color: #8B6F7B;
+}
+.purple-108{
+    background-color: #795D83;
+}
+.purple-109{
+    background-color: #695C7A;
+}
+.purple-110{
+    background-color: #8080A4;
+}
+.purple-111{
+    background-color: #513D62;
+}
+.purple-112{
+    background-color: #333568;
+}
+.purple-113{
+    background-color: #4E3150;
+}
+.purple-114{
+    background-color: #4D4A79;
+}
+.purple-115{
+    background-color: #674C6F;
+}
+.purple-116{
+    background-color: #958999;
+}
+.purple-117{
+    background-color: #A29CC2;
+}
+.purple-118{
+    background-color: #B5ACD9;
+}
+.purple-119{
+    background-color: #A396A7;
+}
+.purple-120{
+    background-color: #94899A;
+}
+.purple-121{
+    background-color: #88747D;
+}
+.purple-122{
+    background-color: #765E7E;
+}
+.purple-123{
+    background-color: #5B425F;
+}
+.purple-124{
+    background-color: #5E5C8E;
+}
+.purple-125{
+    background-color: #6E7399;
+}
+.purple-126{
+    background-color: #938793;
+}
+.purple-127{
+    background-color: #B39CA7;
+}
+.purple-128{
+    background-color: #BDADBB;
+}
+.purple-129{
+    background-color: #AE9088;
+}
+.purple-130{
+    background-color: #988277;
+}
+.purple-131{
+    background-color: #999AAF;
+}
+.purple-132{
+    background-color: #6A2F27;
+}
+.purple-133{
+    background-color: #8B7685;
+}
+.purple-134{
+    background-color: #867891;
+}
+.purple-135{
+    background-color: #998BBA;
+}
+.purple-136{
+    background-color: #5E3F4E;
+}
+.purple-137{
+    background-color: #543C51;
+}
+.purple-138{
+    background-color: #2F2945;
+}
+.blue-3{
+    background-color: #4E79AE;
+}
+.purple-139{
+    background-color: #3C1D2F;
+}
+.purple-140{
+    background-color: #8A8194;
+}
+.purple-141{
+    background-color: #6E739D;
+}
+.purple-142{
+    background-color: #775671;
+}
+.purple-143{
+    background-color: #A798AF;
+}
+.purple-144{
+    background-color: #C5B5C3;
+}
+.purple-145{
+    background-color: #DCCDD0;
+}
+.purple-146{
+    background-color: #D6C5D0;
+}
+.brown-3{
+    background-color: #B79A88;
+}
+.purple-147{
+    background-color: #A19299;
+}
+.brown-4 {
+    background-color: #94795E;
+}
+.purple-148{
+    background-color: #9D8C9F;
+}
+.purple-149{
+    background-color: #81748E;
+}
+.purple-150{
+    background-color: #675154;
+}
+.purple-151{
+    background-color: #61485D;
+}
+.purple-152{
+    background-color: #6F5E95;
+}
+.purple-153{
+    background-color: #392A41;
+}
+.blue-4{
+    background-color: #40AAE6;
+}
+.purple-154{
+    background-color: #555B8B;
+}
+.purple-155{
+    background-color: #A391A3;
+}
+.purple-156{
+    background-color: #C3B1C1;
+}
+.purple-157{
+    background-color: #F6E9F5;
+}
+.purple-158{
+    background-color: #E2D3D8;
+}
+.purple-159{
+    background-color: #C2AFB1;
+}
+.purple-160{
+    background-color: #72647D;
+}
+.purple-161{
+    background-color: #785D8A;
+}
+.purple-162{
+    background-color: #703355;
+}
+.purple-163{
+    background-color: #452951;
+}
+.purple-164{
+    background-color: #462E48;
+}
+.purple-165{
+    background-color: #393053;
+}
+.purple-166{
+    background-color: #414783;
+}
+.purple-167{
+    background-color: #785E81;
+}
+.purple-168{
+    background-color: #898095;
+}
+.brown-5{
+    background-color: #8A694F;
+}
+.purple-169{
+    background-color: #B9A4B5;
+}
+.purple-170{
+    background-color: #D6C3C9;
+}
+.purple-171{
+    background-color: #907F85;
+}
+.purple-172{
+    background-color: #837691;
+}
+.purple-173{
+    background-color: #6B4E60;
+}
+.purple-174{
+    background-color: #B0A0E7;
+}
+.purple-175{
+    background-color: #5C65A0;
+}
+.purple-176{
+    background-color: #5C65A0;
+}
+.purple-177{
+    background-color: #4E4E80;
+}
+.purple-178{
+    background-color: #382E49;
+}
+.blue-5{
+    background-color: #44598E;
+}
+.purple-180{
+    background-color: #7283B7;
+}
+.purple-181{
+    background-color: #6F5D83;
+}
+.purple-182{
+    background-color: #705163;
+}
+.brown-6{
+    background-color: #7A4F3F;
+}
+.purple-183{
+    background-color: #88758B;
+}
+.purple-184{
+    background-color: #998E9E;
+}
+.brown-7{
+    background-color: #977B6D;
+}
+.purple-185{
+    background-color: #AD9799;
+}
+.purple-186{
+    background-color: #C8B0B0;
+}
+.purple-187{
+    background-color: #DCCAC8;
+}
+.brown-8{
+    background-color: #B37A11;
+}
+.brown-9{
+    background-color: #6A2F27;
+}
+.purple-188{
+    background-color: #94848E;
+}
+.purple-189{
+    background-color: #452E4A;
+}
+.purple-190{
+    background-color: #3F3250;
+}
+.purple-191{
+    background-color: #754152;
+}
+.purple-192{
+    background-color: #806F8E;
+}
+.purple-193{
+    background-color: #968DA0;
+}
+.purple-194{
+    background-color: #A396A8;
+}
+.purple-195{
+    background-color: #A99BAC;
+}
+.brown-10{
+    background-color: #8B5C2E;
+}
+.yellow-1{
+    background-color: #9E6D21;
+}
+.brown-11{
+    background-color: #76432E;
+}
+.purple-195{
+    background-color: #5C455F;
+}
+.purple-196{
+    background-color: #6F6E91;
+}
+.purple-197{
+    background-color: #705157;
+}
+.brown-12{
+    background-color: #895B2A;
+}
+.brown-13{
+    background-color: #88644C;
+}
+.purple-198{
+    background-color: #66454E;
+}
+.purple-199{
+    background-color: #755A85;
+}
+.purple-200{
+    background-color: #7C6483;
+}
+.purple-201{
+    background-color: #8B767D;
+}
+.pink-3{
+    background-color: #AC40A0;
+}
+.purple-202{
+    background-color: #5E4157;
+}
+.blue-6{
+    background-color: #709ADF;
+}
+.purple-203{
+    background-color: #754B6F;
+}
+.purple-204{
+    background-color: #582A34;
+}
+.purple-205{
+    background-color: #62335F;
+}
+.purple-206{
+    background-color: #705564;
+}
+.purple-207{
+    background-color: #60353E;
+}
+.blue-7{
+    background-color: #8690C1;
+}
+.purple-208{
+    background-color: #876E8C;
+}
+.purple-209{
+    background-color: #412E4C;
+}
+.purple-210{
+    background-color: #373A6B;
+}
+.purple-211{
+    background-color: #4E3C62;
+}
+.purple-212{
+    background-color: #353865;
+}
