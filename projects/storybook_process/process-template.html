@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+  	<meta name="viewport" content="width=device-width, initial-zoom:1.0">
+  	<meta charset="utf-8">
+    <title>Process Page Template</title>
+    <style>
+        /* Move all CSS to a stylesheet */
+        * { /* Remove default browser spacing */
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            margin: 100px; /* Add spacing around the entire page */ 
+            font-size: 12px; /* Setting baseline font size */ 
+        }
+
+        /* Start of text sizes */
+        h1 {
+            font-size: 4em;
+        }
+        h2 {
+            font-size: 3em;
+        }
+        p {
+            font-size: 2em;
+            line-height: 1.5em;
+        }
+        figcaption {
+            font-size: 1.25em;
+        }
+        /* End of text sizes */
+
+        /* Start of spacing and layout */
+        h2, p, figure, figcaption {
+            margin-bottom: 40px;
+        }
+        img {
+            margin-bottom: 10px;
+        }
+        .process-template {
+            width: 40%; /* Set the width of the template to 60% of the viewport. */
+            margin: auto; /* Center align the template by adding auto margins to the left and right */
+        }
+        .title {
+            margin-bottom: 100px; /* Add spacing to the bottom of the title div */
+        }
+
+        .section {
+            margin-bottom: 100px;
+        }
+        /* End of spacing and layout */
+
+        /* Adding media queries for page to adapts to tablet and mobile devices */
+        @media (max-width: 991px) {
+            .process-template {
+                width: 60%;
+            }
+        }
+
+        @media (max-width:767px) {
+            body {
+                margin: 40px;
+                font-size: 10px;
+            }
+            .process-template {
+                width: 100%;
+            }
+        }
+
+    </style>
+  </head>
+  <body>
+    <div class="process-template">
+        <!-- Start of title -->
+        <div class="title">
+            <h1>"My Roman Empire" Process Page</h1>
+        </div>
+        <!-- End of title -->
+        <!-- Start of content -->
+        <div class="content">
+            <!-- Start of a section -->
+            <div class="section">
+                <h2>The Universe</h2>
+                <p>
+                    My narrative comes from a thought I think about frequently, aka my "roman empire", which is the fact that in comparison to the Milky Way Galaxy we are barely nothing in size. I like to thank the movie inspired by Dr.Seuss' book: "Horton Hears a Who" that inspired this "speck" narrative. I wanted
+                    to use a pixel art style to communicate my narrative to express how compact and dense everything is, like a speck. For this section, I wanted to do an animation where you can see the universe from afar and up close. I experimented with a code I found online, sourced in the html file, and found that increasing the animation speed created a 
+                    slow and ominous effect. For the actual content, I went on Figma to create a grid from an image found online of the Milky Way Galaxy for the pixel art.
+                </p>
+                <p>For the interactive link button, I thought having an animation that made the frame zoom in and out was more engaging for the user.</p>
+                <!-- Start of a section -->
+                <!-- Start of image with caption -->
+                <figure>
+                  <img src="process_1.png"" alt="This text should describe the image" width="100%">
+                  <figcaption>Screenshot of Figma Board</figcaption>
+                </figure>
+                <!-- End of image with caption -->
+            </div>
+            <!-- End of a section -->
+            <!-- Start of a new section -->
+            <div class="section">
+                <h2>The Earth</h2>
+                <p>
+                    I used Figma to create the grid to make a pixel art for the Earth, using another image I sourced from online. And for its animation, I wanted to use only a zoom in effect to create this illusion that the story's narrative progressively gets closer and closer to you. As it goes from the universe to the Earth and eventually to home.
+                </p>
+                <!-- Start of a section -->
+                <!-- Start of image with caption -->
+                <figure>
+                  <img src="process_2.png" alt="This text should describe the image" width="100%">
+                  <figcaption>Screenshot of Figma Board</figcaption>
+                </figure>
+                <!-- End of image with caption -->
+            </div>
+            <!-- End of a new section -->
+            <!-- Start of a new section -->
+            <div class="section">
+                <h2>Home</h2>
+                <p>
+                    I used Figma to create the grid to make the view of the city and I chose not to do any animations on the art as I wanted it to be still as a way to signify that the user stopped travelling from the universe. 
+                </p>
+                <!-- Start of a section -->
+                <!-- Start of image with caption -->
+                <figure>
+                  <img src="process_3.png" alt="This text should describe the image" width="100%">
+                  <figcaption>Screenshot of Figma Board</figcaption>
+                </figure>
+                <!-- End of image with caption -->
+            </div>
+        </div>
+        <!-- End of content -->
+    </div>
+  </body>
+</html>
