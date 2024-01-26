@@ -1,0 +1,161 @@
+/* IN CLASS DEMO */
+.monospace{
+    font-family: monospace;
+}
+
+
+/* copying the code from Adobe Font Website */
+.adobe-font{
+    font-family: "turnip-re", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* copying code from Google font website */
+.google-font{
+    font-family: "Holtwood One SC", serif;
+
+    &:hover{
+        animation-name: slide-right;
+        animation-duration: 1s;
+    }
+}
+
+/* needed for translating invidiual letters */
+span {
+    display: block;
+
+}
+
+/* copied from metaflop website and copied from downloaded file */
+@font-face {
+    font-family: 'Bespoke';
+    src: url('fonts/Bespoke-YfiX3V9vBy.eot');
+    src: url('fonts/Bespoke-YfiX3V9vBy.eot?#iefix') format('embedded-opentype'),
+       url('fonts/Bespoke-YfiX3V9vBy.woff') format('woff'),
+       url('fonts/Bespoke-YfiX3V9vBy.ttf') format('truetype'),
+       url('fonts/Bespoke-YfiX3V9vBy.svg#Bespoke-YfiX3V9vBy') format('svg');
+} 
+
+.self-hosted{
+    /* font-family: 'Bespoke-YfiX3V9vBy'; */
+    font-family: 'Bespoke', sans-serif;
+
+    /* slowly fades or increases, smoother transition, rather than abrupt change in colour */
+    transition: color 750ms, transform 750ms;
+    &:hover {
+        color: blue;
+        /* changing position */
+        transform: translateX(100px);
+    }
+}
+
+@keyframes slide-right{
+    to {
+        transform: translateX(0);
+    }
+    from{
+        transform: translateX(100px);
+    }
+}
+
+/* pseudo class when you hover mouse over it, it changes colour */
+/* .self-hosted:hover{
+    color: blue;
+} */
+
+
+/* EXERCISE TASK */
+.adobe-font-2{
+    font-family: "dogma-bold", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+
+    /* bounce */
+    &:hover {
+        animation-name: bounce;
+        animation-duration: 1s;
+    }
+}
+
+/* https://www.geeksforgeeks.org/design-a-letter-hover-effect-using-html-css-and-javascript/ */
+@keyframes bounce{
+    20%, 
+    50%, 
+    80%, 
+    to { 
+        transform: scale(1, 1);
+        transform: translateY(0);
+        } 
+    40% { 
+        transform: scale(1.75, 0.65); 
+        transform: translateY(20px);
+        } 
+    45% { 
+        transform: scale(1.75, 0.65); 
+        transform: translateY(50px);
+        } 
+    
+    70% { 
+        transform: scale(1.25, 0.75); 
+        transform: translateY(20px);
+        } 
+    90% { 
+        transform: scale(1.15, 0.85); 
+        transform: translateY(0px);
+    } 
+}
+
+.google-font-2{
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 100px;
+
+    &:hover {
+        animation-name: expand; 
+        animation-duration: 1s;
+    }
+}
+
+@keyframes expand{
+    0%{
+        font-weight: 100;
+        }
+    50%{
+        font-weight: 250;
+    }
+    100% {
+        font-weight: 1000;
+    }
+}
+
+
+@font-face {
+    font-family: 'Fetamont';
+    src: url('fonts/Fetamont-_YwC62Pw1I.eot');
+    src: url('fonts/Fetamont-_YwC62Pw1I.eot?#iefix') format('embedded-opentype'),
+       url('fonts/Fetamont-_YwC62Pw1I.woff') format('woff'),
+       url('fonts/Fetamont-_YwC62Pw1I.ttf') format('truetype'),
+       url('fonts/Fetamont-_YwC62Pw1I.svg#Fetamont-_YwC62Pw1I') format('svg');
+  }
+
+.self-hosted-2{
+    font-family: 'Fetamont';
+    font-size: 200px;
+
+    &:hover {
+        animation-name: fade;
+        animation-duration: 2s;
+    }
+}
+
+@keyframes fade {
+    from{
+        opacity: 1;
+    }  
+    to{
+        opacity: 0;
+    }
+}
+
