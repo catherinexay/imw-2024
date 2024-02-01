@@ -1,0 +1,169 @@
+/* for default browser spacing */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+header {
+    background-color: white;
+    border: 1px solid black;
+    display: flex;
+    /* justify-content only works with horizontal */
+    justify-content: space-between;
+    /* dealing with vertical spacing  */
+    align-items: center;
+
+    /* hold option in figma to see padding pixels */
+    /* top right bottom left */
+    padding: 30px 36px;
+}
+
+footer {
+    background-color: white;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 36px;
+}
+
+.site-name {
+    /* changing font */
+    font-size: 36px;
+    font-weight: 500;
+}
+
+ul {
+    /* no bullets */
+    list-style-type: none;
+
+    li {
+        font-size: 18px;
+
+        /* have items displayed in 1 line */
+        display: inline-block;
+
+        /* "first-child" and "last-child" any other element is "nth-child(NUMBER) */
+        &:first-child {
+            margin-right: 44px;
+        }
+
+        &:nth-child(2) {
+            margin-right: 44px;
+        }
+    }
+}
+
+ul-3 {
+    /* no bullets */
+    list-style-type: none;
+
+    li-3 {
+        font-size: 14px;
+
+        display: inline-block;
+
+        &:first-child {
+            margin-right: 44px;
+        }
+
+        &:nth-child(2) {
+            margin-right: 44px;
+        }
+
+    }
+}
+
+/* vertical list */
+ul-2 {
+    list-style-type: none;
+
+    li-2 {
+        display: flex;
+        font-size: 12px;
+
+        &:nth-child(2) {
+            margin-top: 16px;
+        }
+
+        &:last-child {
+            margin-top: 16px;
+        }
+
+    }
+}
+
+.hero-section {
+    /* vh is viewport height */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* stacking the content */
+    flex-direction: column;
+    text-align: center;
+}
+
+h1 {
+    font-size: 120px;
+    line-height: 106px;
+    /* adding space between h1 and call to action */
+    margin-bottom: 72px;
+}
+
+.call-to-action {
+    text-transform: uppercase;
+}
+
+.call-to-action-2 {
+    text-transform: uppercase;
+    margin-left: 36px;
+    position: absolute;
+    bottom: 30px;
+}
+
+
+h2 {
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.info-section {
+    /* using grid method */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 320px;
+    border: 1px solid black;
+    position: relative;
+}
+
+.border-right {
+    /* for lines in between info section */
+    border-right: 1px solid black;
+}
+
+h3 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-left: 36px;
+    margin-top: 30px;
+    margin-right: 70px;
+}
+
+p {
+    font-size: 14px;
+    font-weight: 300;
+
+    margin-left: 36px;
+    margin-top: 12px;
+    margin-right: 38px;
+}
+
+h4 {
+    font-size: 18px;
+    font-weight: 600;
+}
