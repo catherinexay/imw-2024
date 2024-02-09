@@ -1,0 +1,50 @@
+body {
+    background: red;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* text colour */
+h1 {
+    color: white;
+}
+
+/* rainbow colours */
+@media (max-width: 1221px) {
+    body {
+        background: orange;
+    }
+}
+
+@media (max-width: 1018px) {
+    body {
+        background: yellow;
+    }
+}
+
+@media (max-width: 815px) {
+    body {
+        background: green;
+    }
+}
+
+@media (max-width: 612px) {
+    body {
+        background: blue;
+    }
+}
+
+@media (max-width: 409px) {
+    body {
+        background: indigo;
+    }
+}
+
+@media (max-width: 203px) {
+    body {
+        background: violet;
+    }
+}
