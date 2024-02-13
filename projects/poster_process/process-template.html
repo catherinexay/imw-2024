@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-zoom:1.0">
+    <meta charset="utf-8">
+    <title>Process Page Template</title>
+    <style>
+        /* Move all CSS to a stylesheet */
+        * {
+            /* Remove default browser spacing */
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            margin: 100px;
+            /* Add spacing around the entire page */
+            font-size: 12px;
+            /* Setting baseline font size */
+        }
+
+        /* Start of text sizes */
+        h1 {
+            font-size: 4em;
+        }
+
+        h2 {
+            font-size: 3em;
+        }
+
+        p {
+            font-size: 2em;
+            line-height: 1.5em;
+        }
+
+        figcaption {
+            font-size: 1.25em;
+        }
+
+        /* End of text sizes */
+
+        /* Start of spacing and layout */
+        h2,
+        p,
+        figure,
+        figcaption {
+            margin-bottom: 40px;
+        }
+
+        img {
+            margin-bottom: 10px;
+        }
+
+        .process-template {
+            width: 40%;
+            /* Set the width of the template to 60% of the viewport. */
+            margin: auto;
+            /* Center align the template by adding auto margins to the left and right */
+        }
+
+        .title {
+            margin-bottom: 100px;
+            /* Add spacing to the bottom of the title div */
+        }
+
+        .section {
+            margin-bottom: 100px;
+        }
+
+        /* End of spacing and layout */
+
+        /* Adding media queries for page to adapts to tablet and mobile devices */
+        @media (max-width: 991px) {
+            .process-template {
+                width: 60%;
+            }
+        }
+
+        @media (max-width:767px) {
+            body {
+                margin: 40px;
+                font-size: 10px;
+            }
+
+            .process-template {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="process-template">
+        <!-- Start of title -->
+        <div class="title">
+            <h1>Theorizing the Web Poster</h1>
+        </div>
+        <!-- End of title -->
+        <!-- Start of content -->
+        <div class="content">
+            <!-- Start of a section -->
+            <div class="section">
+                <h2>Research</h2>
+                <p>
+                    First I looked up the conference online and it appeared that the conference was run by a group of
+                    technology enthusiasts. I noticed one of their recent sites was actually discussing AI and Web 3.0
+                    which lead
+                    to me choosing my colour palette of blue and orange. These colours you would often see in most
+                    generative AI images, specifically when visualizing the future. These images were also shown in
+                    their recent post about the conference. Then, I noticed that the original
+                    website was a blog website so I decided to make my poster into a blog-style post. However, I didn't
+                    like the original layout of the blog so I decided to choose another layout, rather than to copy it
+                    directly. To further allude to the Web in honour of 'Theorizing the Web', I also used font styles
+                    that were common in the web such as Helvetica, Lato, and Montserrat.
+                    My goal is to create a simple and interactive blog post for technology enthusiasts.
+                </p>
+                <!-- Start of a section -->
+                <!-- Start of image with caption -->
+                <figure>
+                    <img src="image1.png" alt="This text should describe the image" width="100%">
+                    <figcaption>Original Blog Site</figcaption>
+                </figure>
+                <figure>
+                    <img src="image2.png" alt="This text should describe the image" width="100%">
+                    <figcaption>Latest Blog Post</figcaption>
+                </figure>
+                <!-- End of image with caption -->
+            </div>
+            <!-- End of a section -->
+            <!-- Start of a new section -->
+            <div class="section">
+                <h2>Development</h2>
+                <p>
+                    I used Figma to prototype my poster. In my board, I documented what websites I looked at and
+                    what generative AI images from the blog post inspired my project. Then, I defined my colours
+                    and my fonts that were common across the web. Lastly, I focused on the layout. Originally, I
+                    wanted to do a magazine style; however, after finding out the original website type was a blog
+                    post. I wanted to convey the same style. For the background, I wanted to do a 'web' of the words
+                    'web'. On CSS, I tried to overlap 2 grids on top of each other using the z-index; however, it did
+                    not work out so I tried to focus my project on the user interaction.
+                    I made sure that hyperlinks lit up when the mouse is hovering over it. Creating some interaction for
+                    the titles of the main sections.
+                    As well as even changing the cursor symbol to 'Wait' when it hovers over the dates mentioned in the
+                    'Agenda' section. For the site title 'Cyborgology', I screenshotted an image from the original
+                    website and put it in a text-finder to directly copy the title, giving it the illusion that
+                    Cyborgology made this post.
+                    For the stylistic choice, I really liked the background shadows for all the text because it created
+                    some cascading effect that I imagine lines of codes would travel across the interweb.
+                </p>
+                <!-- Start of a section -->
+                <!-- Start of image with caption -->
+                <figure>
+                    <img src="image3.png" alt="This text should describe the image" width="100%">
+                    <figcaption>Here is my original idea that I wanted to pursue; however, I couldn't figure out how to
+                        put text in the background.</figcaption>
+                    <a
+                        href="https://www.figma.com/file/3bLVrZg0lUJUrrp8JR6N5m/Project-2-Poster?type=design&node-id=0%3A1&mode=design&t=652a5NyqXNN6dc1U-1">Figma
+                        Board</a>
+                </figure>
+                <!-- End of image with caption -->
+            </div>
+            <!-- End of a new section -->
+        </div>
+        <!-- End of content -->
+    </div>
+</body>
+
+</html>
