@@ -37,7 +37,7 @@ console.log($('div').height());
 $('body').on('keypress', function () {
     let currentHeight = $('div').height();
 
-    let randNumber = Math.random(1) * currentHeight;
+    let randNumber = Math.random(1) * currentHeight * 1.5;
 
     $('div').slideDown("slow");
     $('div').removeClass('no-width');
