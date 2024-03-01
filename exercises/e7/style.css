@@ -1,0 +1,43 @@
+# {
+    /* make it flush */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+}
+
+div {
+    box-shadow: 2px 2px 5px black;
+
+    /* animation */
+    transition: all 1s;
+    /* background-color: white; */
+}
+
+.no-width {
+    /* important will override any of css that you have previously */
+    width: 0 !important;
+
+}
+
+
+p {
+    font-size: 100px;
+}
+
+.foreground {
+    position: absolute;
+    /*  be on top */
+    z-index: 2;
+    width: 100%;
+    /* columns instead of rows */
+    display: flex;
+}
+
+.background {
+    position: absolute;
+}

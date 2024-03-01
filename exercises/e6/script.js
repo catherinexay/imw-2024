@@ -11,23 +11,45 @@ const blueCircle = document.getElementById("blue");
 let interactionContainer = document.getElementById("interactionContainer");
 
 
-greenCircle.addEventListener("click", function () {
-    console.log(interactionContainer);
-    interactionContainer.style.backgroundColor = "lightgreen";
-}
-)
+// selecting the div with the 3 colors
+const colourButtons = document.querySelectorAll(".colors");
 
-pinkCircle.addEventListener("click", function () {
-    console.log(interactionContainer);
-    interactionContainer.style.backgroundColor = "plum";
-}
-)
+for (let i = 0; i < colourButtons.length; i++) {
+    colourButtons[i].addEventListener('click', function () {
+        interactionContainer.style.backgroundColor = getComputedStyle(colourButtons[i]).backgroundColor;
+    })
 
-blueCircle.addEventListener("click", function () {
-    console.log(interactionContainer);
-    interactionContainer.style.backgroundColor = "lightblue";
+
+
+    // getComputedStyle(colourButtons[i].backgroundStyle);
+
+    // if (i == 0) {
+    //     interactionContainer.style.backgroundColor = "lightgreen";
+    // } else if (i == 1) {
+    //     interactionContainer.style.backgroundColor = "plum";
+    // } else {
+    //     interactionContainer.style.backgroundColor = "lightblue";
+    // }
 }
-)
+
+
+// greenCircle.addEventListener("click", function () {
+//     console.log(interactionContainer);
+//     interactionContainer.style.backgroundColor = "lightgreen";
+// }
+// )
+
+// pinkCircle.addEventListener("click", function () {
+//     console.log(interactionContainer);
+//     interactionContainer.style.backgroundColor = "plum";
+// }
+// )
+
+// blueCircle.addEventListener("click", function () {
+//     console.log(interactionContainer);
+//     interactionContainer.style.backgroundColor = "lightblue";
+// }
+// )
 
 
 // FOR LOOP
