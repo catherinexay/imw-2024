@@ -1,0 +1,49 @@
+* {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f29123;
+}
+
+.breweries {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border: 1vw solid #9a5608;
+    border-radius: 5vw;
+    margin-top: 0px;
+
+}
+
+h1 {
+    font-size: 3vw;
+    color: #452603;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+
+h2 {
+    font-size: 1.7vw;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+p {
+    font-size: 1.5vw;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+#button {
+    margin: 10px;
+    width: auto;
+    height: 40px;
+    background: white;
+    background-size: 100% 100%;
+    display: block;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #261502;
+    text-shadow: 0 0 10px #000;
+    background-color: #fad6ad;
+    border-radius: 50vw;
+}
