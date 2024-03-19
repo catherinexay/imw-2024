@@ -1,0 +1,81 @@
+* {
+    margin: 1vh;
+    padding: 1vh;
+}
+
+body {
+    background-color: lightblue;
+    font-family: sans-serif;
+
+    display: flex;
+    padding: 0.5vh 0.5vh;
+    flex-direction: column;
+}
+
+h1 {
+    color: grey;
+    font-size: 7.95vw;
+    margin-bottom: 0.5vh;
+    text-align: center;
+}
+
+h2 {
+    color: grey;
+    font-size: 6.95vw;
+    margin-bottom: 0.3vh;
+    text-align: left;
+    text-transform: lowercase;
+
+    /* &:hover {
+        animation-name: fade;
+        animation-duration: 2s;
+    } */
+}
+
+h3 {
+    color: grey;
+    font-size: 6.95vw;
+    margin-bottom: 0.3vh;
+    text-align: center;
+    text-transform: lowercase;
+}
+
+h4 {
+    color: grey;
+    font-size: 6.95vw;
+    margin-bottom: 0.3vh;
+    text-align: right;
+    text-transform: lowercase;
+}
+
+/* https://stackoverflow.com/questions/66328670/css-hover-fade-in-on-hover-disappear-instantly-off-hover */
+/* turns text invisible */
+.invisible {
+    opacity: 0;
+}
+
+.cursor-fade {
+    cursor: pointer;
+}
+
+.cursor-fade:hover .invisible {
+    opacity: 100%;
+    transition: 1s;
+}
+
+/* @keyframes fade {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+
+} */
+
+p {
+    font-size: 0.75vw;
+    text-align: left;
+    font-style: italic;
+}
