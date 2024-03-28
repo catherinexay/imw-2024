@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-zoom:1.0">
+    <meta charset="utf-8">
+    <title>Process Page Template</title>
+    <style>
+        /* Move all CSS to a stylesheet */
+        * {
+            /* Remove default browser spacing */
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            margin: 100px;
+            /* Add spacing around the entire page */
+            font-size: 12px;
+            /* Setting baseline font size */
+        }
+
+        /* Start of text sizes */
+        h1 {
+            font-size: 4em;
+        }
+
+        h2 {
+            font-size: 3em;
+        }
+
+        p {
+            font-size: 2em;
+            line-height: 1.5em;
+        }
+
+        figcaption {
+            font-size: 1.25em;
+        }
+
+        /* End of text sizes */
+
+        /* Start of spacing and layout */
+        h2,
+        p,
+        figure,
+        figcaption {
+            margin-bottom: 40px;
+        }
+
+        img {
+            margin-bottom: 10px;
+        }
+
+        .process-template {
+            width: 40%;
+            /* Set the width of the template to 60% of the viewport. */
+            margin: auto;
+            /* Center align the template by adding auto margins to the left and right */
+        }
+
+        .title {
+            margin-bottom: 100px;
+            /* Add spacing to the bottom of the title div */
+        }
+
+        .section {
+            margin-bottom: 100px;
+        }
+
+        /* End of spacing and layout */
+
+        /* Adding media queries for page to adapts to tablet and mobile devices */
+        @media (max-width: 991px) {
+            .process-template {
+                width: 60%;
+            }
+        }
+
+        @media (max-width:767px) {
+            body {
+                margin: 40px;
+                font-size: 10px;
+            }
+
+            .process-template {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="process-template">
+        <!-- Start of title -->
+        <div class="title">
+            <h1>Hover Interaction: Clickless Fun</h1>
+        </div>
+        <!-- End of title -->
+        <!-- Start of content -->
+        <div class="content">
+            <!-- Start of a section -->
+            <div class="section">
+                <h2>Intent and Research</h2>
+                <p>
+                    My assigned interaction was hover. I wanted my project to be absolutely click-less. And to have my
+                    cursor rely on its movement, its position, and its hover. For my research, I created an Are.na page
+                    where I looked examples of “imaginative cursor design” and one that stuck out to me was
+                    <a href=https://pointerpointer.com />https://pointerpointer.com</a>
+                    where they ask to hold your
+                    cursor still on the screen and depending on
+                    the position of your cursor, an image will appear on the screen with someone pointing to your cursor
+                    directly. Another example that I liked was
+                    <a href=https://1987masters.com />https://1987masters.com</a>
+                    where they had a tail following
+                    the cursor and there was a bit of delay to it. You can see more examples on my <a
+                        href=https://www.are.na/catherine-xayabanha/imw-2024>Are.na</a> page where I
+                    also look at the history of the cursor design and how it evolved from a blinking square controlled
+                    from a keyboard to the cursor we use today.
+                </p>
+
+                <h2>Initial Ideas</h2>
+                <p>
+                    One of my first ideas was to create a slappy hand cursor. Where your cursor position would be acting
+                    like you holding the end of the slappy hand string and then the string would be elastic and it would
+                    act against gravity, having a swinging motion. Then elements would stick to the hand. As I iterated
+                    this idea, I learned how to move divs with my cursor and how to animate my cursor to make a swinging
+                    motion like I wanted for my slappy hand. However, designing the concept of gravity for my code was a
+                    bit of a challenge. Regardless I still included what I learned from this process into my final
+                    cursor design.
+                </p>
+                <!-- Start of a section -->
+                <!-- Start of image with caption -->
+                <figure>
+                    <img src="image1.png" alt="Screenshot taken from Figma Board of my digital sketch" width="100%">
+                    <figcaption>Screenshot taken from Figma Board of my digital sketch</figcaption>
+                </figure>
+                <!-- End of image with caption -->
+                <p>
+                    One of my other ideas was to create a ‘fill in the blank number’ abstract drawing. I always notice
+                    with these type of sites and apps that the game asks you to click on the box to fill it with colour.
+                    But I asked myself “what I hovered over it instead to reduce the amount of time you have to click
+                    it?”. So I went with the direction to make my abstract website a random fill in the colours site.
+                </p>
+                <p>You can see more of my initial digital sketches of all my ideas in my <a
+                        href="https://www.figma.com/file/lbJxfLKwSAiCPt8eR1sXfd/P3-Board?type=design&node-id=0%3A1&mode=design&t=oovLlKRnPSw9JpoX-1">Figma</a>
+                    board. </p>
+            </div>
+            <!-- End of a section -->
+            <!-- Start of a new section -->
+            <div class="section">
+                <h2>Project Features</h2>
+                <p>
+                    Some features of my site is that when you first open the site, if you hover over the screen, the
+                    squares will appear and will be transitioning to their assigned colours red, blue, and yellow as
+                    well as becoming slightly bigger when hovering over. I assigned the colours using a method where I
+                    take the intervals of the square number and I ask the code to check the remainder and if the
+                    remainder equals a specific number, then to assign it with a specific colour.
+                </p>
+                <!-- Start of a section -->
+                <!-- Start of image with caption -->
+                <figure>
+                    <img src="image2.png" alt="Screenshot of site" width="100%">
+                </figure>
+                <!-- End of image with caption -->
+                <p>
+                    Then if you hover near the bottom of the screen, the colours will randomize using a randomRGB
+                    function for squares that are already on the screen. This will give you the opportunity to hover
+                    over the squares again to make them red, blue, and yellow. Although I noticed there was some lag, so
+                    I had a function to delay the colour animation and it seemed a little better for the lag.
+
+                </p>
+                <figure>
+                    <img src="image3.png" alt="Screenshot of site" width="100%">
+                </figure>
+                <p>
+                    Lastly, if you hover near the right edge of the screen. The squares will disappear and you can hover
+                    on
+                    the screen to make them reappear again.
+                </p>
+                <p>
+                    The intention of this site was to have fun with hover by utilizing the cursor position, mouseenter,
+                    and
+                    mouseleave, and learning how to design the cursor in a fun way.
+                </p>
+                <!-- End of a new section -->
+            </div>
+        </div>
+        <!-- End of content -->
+    </div>
+</body>
+
+</html>
