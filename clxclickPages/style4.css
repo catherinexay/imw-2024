@@ -1,0 +1,376 @@
+/* for resources */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* removes underline */
+.resource-link {
+    text-decoration: none;
+    color: #9A3B3B;
+
+    /* putting the links into rectangles */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 12vw;
+    height: 10vh;
+
+    font-size: 0.8vw;
+    text-align: center;
+    line-height: 8vh;
+    border: 5px solid black;
+    background-color: #F2ECBE;
+
+    /* making border */
+    border: 10px solid transparent;
+    border-image: url(border.png) 17 round;
+
+    transition: background-color 0.3s ease;
+
+}
+
+
+.resource-link:hover {
+    background-color: white;
+}
+
+.button-link {
+    position: fixed;
+    bottom: 30px;
+    left: 10px;
+
+    border: none;
+    background-color: transparent;
+
+
+}
+
+.button-link:hover .purple {
+    background-color: black;
+}
+
+
+
+.curved-text {
+    display: inline-block;
+    height: 19vh;
+    width: 34vw;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    /* border: 5px solid black; */
+}
+
+#curve {
+    fill: #C08261;
+}
+
+.main-container {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    position: relative;
+}
+
+.text {
+    font-size: 2.3vw;
+    fill: #F2ECBE;
+}
+
+
+
+
+
+
+.item-1 {
+    background-color: #C08261;
+    text-align: center;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    grid-template-rows: repeat(3, 1fr);
+
+}
+
+.item-2 {
+    background-color: #E2C799;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    font-size: 2.2vw;
+}
+
+
+/* vertical list */
+ul {
+    /* no bullet points */
+    list-style-type: none;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    li {
+        display: flex;
+        justify-content: center;
+        background-color: #C08261;
+
+        font-family: "Silkscreen", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        /* height: 0.1vh; */
+        height: 100%;
+
+        &:first-child {
+            margin-top: 5vw;
+        }
+
+        &:nth-child(2) {
+            margin-top: 5vw;
+        }
+
+        &:nth-child(3) {
+            margin-top: 5vw;
+        }
+
+        &:last-child {
+            margin-top: 5vw;
+        }
+    }
+}
+
+ul-2 {
+    /* no bullet points */
+    list-style-type: none;
+    display: flex;
+    /* stacks on top of each other */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+    /* width: 200px; */
+
+    li-2 {
+        background-color: #E2C799;
+        margin-top: 10px;
+        font-family: "Silkscreen", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        /* 
+        &:nth-child(2) {
+            margin-top: 7vh;
+        }
+
+        &:nth-child(3) {
+            margin-top: 7vh;
+        }
+
+
+        &:last-child {
+            margin-top: 7vh;
+        } */
+
+    }
+}
+
+/* making characters */
+.pixel-grid {
+    /* height: 512px;
+    width: 288px; */
+    height: 350.7px;
+    width: 245.4px;
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+    /* border: 1px solid black; */
+
+}
+
+
+/* colours */
+
+.beige {
+    background-color: #FFFFEF;
+}
+
+.red {
+    background-color: #CC0404;
+}
+
+.bright-red {
+    background-color: #FF0000;
+}
+
+.peach {
+    background-color: #FBC69F;
+}
+
+.black {
+    background-color: black;
+}
+
+.grey {
+    background-color: #898989;
+}
+
+.white {
+    background-color: white;
+}
+
+.transparent {
+    background-color: transparent;
+}
+
+.dark-peach {
+    background-color: #EFBB95;
+}
+
+.purple {
+    background-color: #9A3B3B;
+
+    transition: background-color 0.3s ease;
+
+}
+
+.dark-grey {
+    background-color: #4D5257;
+}
+
+.grey-2 {
+    background-color: #424446;
+}
+
+.grey-3 {
+    background-color: #3C4044;
+}
+
+.blue {
+    background-color: #445175;
+}
+
+.light-grey {
+    background-color: #D9D9D9;
+}
+
+.dark-grey-2 {
+    background-color: #939393;
+}
+
+.laptop-grey {
+    background-color: #B9B9BB;
+}
+
+.brown {
+    background-color: #C56D2D;
+}
+
+.laptop-grey-1 {
+    background-color: #C6C6C6;
+}
+
+.laptop-grey-2 {
+    background-color: #AAAAAA;
+}
+
+.dark-brown {
+    background-color: #B76229;
+}
+
+.brown-2 {
+    background-color: #BC662B;
+}
+
+
+/* when screen gets smaller horizontally */
+@media screen and (max-width: 1200px) {
+
+    .resource-link {
+        font-size: 0.8vw;
+        height: 5vw;
+    }
+
+    .main-container {
+        grid-template-columns: 1.4fr 1.6fr;
+    }
+
+    .text {
+        font-size: 4.95vw;
+    }
+
+    .item-2 {
+        font-size: 5vw;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 0.5fr);
+    }
+
+    ul {
+        li {
+            &:first-child {
+                margin-top: 11vw;
+            }
+
+            &:nth-child(2) {
+                margin-top: 11vw;
+            }
+
+            &:nth-child(3) {
+                margin-top: 11vw;
+            }
+
+            &:last-child {
+                margin-top: 11vw;
+            }
+        }
+    }
+
+}
+
+/* when screen gets smaller vertically */
+
+@media screen and (max-height: 600px) {
+
+    .resource-link {
+        font-size: 1.2vw;
+    }
+
+
+}
+
+/* navigation back button */
+.button-pixel-grid {
+    height: 96px;
+    width: 134.4px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    /* border: 1px solid black; */
+
+}
+
+/* .button-pixel-grid div {
+    border: 1px solid black;
+    box-sizing: border-box;
+
+} */
+
+/* stretch text */
+
+/* https://stackoverflow.com/questions/6351013/can-i-stretch-text-using-css */
+.stretched-text {
+    letter-spacing: 3px;
+    font-size: 4vw;
+    color: #F2ECBE;
+    transform: scaleY(3.5);
+    /* transform-origin: 0 0;  */
+
+}
+
+span {
+    vertical-align: top;
+}

@@ -1,0 +1,265 @@
+/* for homepage */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* removes underline */
+a {
+    text-decoration: none;
+    color: #9A3B3B;
+
+    /* putting the links into rectangles */
+    display: inline-block;
+    width: 20vw;
+    height: 8vh;
+    text-align: center;
+    line-height: 8vh;
+    border: 5px solid black;
+    background-color: #F2ECBE;
+
+    /* making border */
+    border: 10px solid transparent;
+    border-image: url(border.png) 17 round;
+
+    transition: background-color 0.3s ease;
+
+}
+
+a:hover {
+    background-color: white;
+}
+
+.curved-text {
+    display: inline-block;
+    height: 19vh;
+    width: 34vw;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    /* border: 5px solid black; */
+}
+
+#curve {
+    fill: #C08261;
+}
+
+.main-container {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    position: relative;
+}
+
+.text {
+    font-size: 1.7vw;
+    fill: #F2ECBE;
+}
+
+
+
+
+
+.item-1 {
+    background-color: #C08261;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.item-2 {
+    background-color: #E2C799;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.2vw;
+}
+
+
+/* vertical list */
+ul {
+    /* no bullet points */
+    list-style-type: none;
+
+    li {
+        display: flex;
+        justify-content: center;
+        background-color: #C08261;
+
+        font-family: "Silkscreen", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+
+
+        &:last-child {
+            margin-top: 30px;
+        }
+
+    }
+}
+
+ul-2 {
+    /* no bullet points */
+    list-style-type: none;
+
+    li-2 {
+        display: flex;
+        justify-content: center;
+        background-color: #E2C799;
+
+
+        font-family: "Silkscreen", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+
+        &:nth-child(2) {
+            margin-top: 7vh;
+        }
+
+        &:nth-child(3) {
+            margin-top: 7vh;
+        }
+
+
+        &:last-child {
+            margin-top: 7vh;
+        }
+
+    }
+}
+
+/* .silkscreen-regular {
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.silkscreen-bold {
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+} */
+
+
+
+
+
+
+
+/* making characters */
+.pixel-grid {
+    /* height: 512px; */
+    /* width: 160px; */
+
+    /* height: 50.1vh; */
+    height: 350.7px;
+    width: 110.4px;
+    /* width: 9.7vw; */
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+    /* border: 1px solid black; */
+
+}
+
+/* .pixel-grid div {
+    border: 1px solid black;
+    box-sizing: border-box;
+
+} */
+
+/* pixel colours */
+
+/* home-landing character colours */
+
+.red {
+    background-color: #CC0404;
+}
+
+.peach {
+    background-color: #FBC69F;
+}
+
+.black {
+    background-color: black;
+}
+
+.grey {
+    background-color: #898989;
+}
+
+.white {
+    background-color: white;
+}
+
+.blue {
+    background-color: #445175;
+}
+
+.transparent {
+    background-color: transparent;
+}
+
+.homepage-character {
+    /* height: 73.1vh;
+    width: 19.7vw; */
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s;
+}
+
+.homepage-character:hover {
+    animation: shake 0.5s ease-in-out infinite;
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-5px);
+    }
+
+    50% {
+        transform: translateX(5px);
+    }
+
+    75% {
+        transform: translateX(-5px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* when screen gets smaller horizontally */
+@media screen and (max-width: 700px) {
+
+    .main-container {
+        grid-template-columns: 1.4fr 1.6fr;
+    }
+
+    .text {
+        font-size: 3.95vw;
+    }
+
+}
+
+/* when screen gets smaller vertically */
+
+@media screen and (max-height: 600px) {
+    .pixel-grid {
+        height: 210.04px;
+        width: 66.24px;
+    }
+}
